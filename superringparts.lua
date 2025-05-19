@@ -1,5 +1,4 @@
-Button.MouseButton1Click:Connect(function()
-    local Players = game:GetService("Players")
+local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 local SoundService = game:GetService("SoundService")
@@ -344,8 +343,3 @@ local function SendChatMessage(message)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
     end
 end
-
---[[
-	The script was copied from https://cheater.fun/
-]]
-  end)
